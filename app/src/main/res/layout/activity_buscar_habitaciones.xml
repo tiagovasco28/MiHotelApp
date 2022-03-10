@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchRoom">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/titulo_card"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Hotel Room"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/texto_descripcion_card"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_hab_card" />
+
+        <ImageView
+            android:id="@+id/image_hab_card"
+            android:layout_width="match_parent"
+            android:layout_height="208dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/titulo_card"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/habitacion3" />
+
+        <TextView
+            android:id="@+id/texto_descripcion_card"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:text="Descripcion"
+            app:layout_constraintBottom_toTopOf="@+id/precio_card"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titulo_card" />
+
+        <TextView
+            android:id="@+id/precio_card"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:gravity="center"
+            android:text="€ 100.00"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_reservar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/texto_descripcion_card" />
+
+        <Button
+            android:id="@+id/btn_reservar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="297dp"
+            android:background="#009688"
+            android:shadowColor="#BF4242"
+            android:text="Reservar"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/precio_card" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

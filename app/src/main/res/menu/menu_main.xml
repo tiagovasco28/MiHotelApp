@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/item_menu_perfil"
+        android:title="@string/perfil"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/item_menu_reservas"
+        android:title="@string/Reservas"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/item_menu_historial"
+        android:title="@string/Historial"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item_menu_configuraciones"
+        android:title="@string/Configuraciones"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item_menu_salir"
+        android:title="@string/Salir"
+        app:showAsAction="never" />
+
+</menu>
